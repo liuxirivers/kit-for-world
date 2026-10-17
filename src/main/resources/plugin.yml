@@ -1,0 +1,18 @@
+name: RandomGift
+version: '1.0.0'
+main: io.github.randomgift.RandomGiftPlugin
+api-version: '26.1.2'
+description: 随机世界礼包 - 在地表生成可交互礼包实体，右键领取随机奖励
+author: RandomGift
+
+commands:
+  gift:
+    description: 礼包插件管理指令
+    usage: /gift <spawn|reload|cr>
+    aliases: [randomgift]
+    permission: randomgift.admin
+
+permissions:
+  randomgift.admin:
+    description: 允许使用所有 /gift 管理指令
+    default: op
